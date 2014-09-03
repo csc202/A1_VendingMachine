@@ -19,5 +19,8 @@ public class ItemLinkedList {
 		numElement++;
 	}
 	
-	
+	//remove
+	//isEmpty
+	//find
+	//toString
 }
