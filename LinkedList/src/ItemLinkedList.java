@@ -1,5 +1,5 @@
 
-public class ItemLinkedList {
+public class ItemLinkedList <T>{
 	Node head, tail;
 	int numElement;
 	public ItemLinkedList() {
@@ -8,7 +8,7 @@ public class ItemLinkedList {
 		numElement=0;
 	}
 	
-	public void insert(String element) {
+	public void insert(T element) {
 		Node newNode = new Node(element);
 		if(head==null) {
 			head = newNode;
@@ -22,5 +22,15 @@ public class ItemLinkedList {
 	//remove
 	//isEmpty
 	//find
-	//toString
+	//toT
+	public String toString() {
+		String list="";
+		Node current;
+		current = head;
+		while(current!=null) {
+			list += current.getValue() + " ";
+			current = current.getLink();
+		}
+		return list;
+	}
 }

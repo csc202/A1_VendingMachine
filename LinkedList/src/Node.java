@@ -1,18 +1,18 @@
 
-public class Node {
-	private String value;
+public class Node <T>{
+	private T value;
 	private Node  link;
 	
-	public Node(String value) {
+	public Node(T value) {
 		this.value = value;
 		this.link = null;
 	}
 
-	public String getValue() {
+	public T getValue() {
 		return value;
 	}
 
-	public void setValue(String value) {
+	public void setValue(T value) {
 		this.value = value;
 	}
 
