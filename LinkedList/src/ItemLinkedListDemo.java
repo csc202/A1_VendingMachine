@@ -1,8 +1,11 @@
+import java.util.Scanner;
+
 
 public class ItemLinkedListDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner keyboard = new Scanner(System.in);
 		ItemLinkedList <String>aList = new ItemLinkedList<String>();
 		aList.insert("Debbie");
 		aList.insert("Anthony");
